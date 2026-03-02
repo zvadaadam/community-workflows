@@ -1,5 +1,21 @@
 {
   "version": 1,
-  "updatedAt": "2026-03-02T00:00:00.000Z",
-  "pipelines": []
+  "updatedAt": "2026-03-02T20:40:21.427Z",
+  "pipelines": [
+    {
+      "id": "untitled-pipeline",
+      "name": "Untitled Pipeline",
+      "description": "Animation of Claude Claude SVG logo",
+      "author": "Adam",
+      "tags": [
+        "claude code",
+        "sag"
+      ],
+      "category": "design",
+      "nodeCount": 3,
+      "pipelinePath": "pipelines/untitled-pipeline/pipeline.json",
+      "publishedAt": "2026-03-02T20:40:21.427Z",
+      "updatedAt": "2026-03-02T20:40:21.427Z"
+    }
+  ]
 }

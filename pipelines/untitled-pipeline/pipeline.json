@@ -1,0 +1,104 @@
+{
+  "id": "49f5f2af-c744-4062-a5b3-0eea98e8b0d0",
+  "name": "Untitled Pipeline",
+  "description": "Animation of Claude Claude SVG logo",
+  "nodes": [
+    {
+      "id": "node-1",
+      "type": "asset-upload",
+      "position": {
+        "x": 177.9060800260557,
+        "y": 50.602808742204914
+      },
+      "data": {
+        "name": "Asset Upload",
+        "config": {
+          "file": null,
+          "fileType": "image",
+          "fileName": "claude-color.svg",
+          "uploadedFilePath": "/Users/zvada/.imageflow/pipelines/c3243e5b-a3db-4e0c-8c23-889b5d536782/assets/upload_node-1.svg"
+        },
+        "status": "idle"
+      },
+      "measured": {
+        "width": 260,
+        "height": 340
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node-3",
+      "type": "svg-editor",
+      "position": {
+        "x": 719.9875831243239,
+        "y": 298.7555679724884
+      },
+      "data": {
+        "name": "SVG Editor",
+        "config": {
+          "provider": "replicate",
+          "model": "gemini-3.1-pro",
+          "temperature": 0.3,
+          "maxTokens": 4096,
+          "params": {}
+        },
+        "status": "idle"
+      },
+      "measured": {
+        "width": 260,
+        "height": 322
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node-4",
+      "type": "text-prompt",
+      "position": {
+        "x": 188.43403514492053,
+        "y": 576.1612285199933
+      },
+      "data": {
+        "name": "Text Prompt",
+        "config": {
+          "prompt": "<p>make it rotate and burst</p>"
+        },
+        "status": "idle"
+      },
+      "measured": {
+        "width": 260,
+        "height": 156
+      },
+      "selected": false,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "animated": true,
+      "source": "node-1",
+      "sourceHandle": "asset-out",
+      "target": "node-3",
+      "targetHandle": "svg-in",
+      "id": "xy-edge__node-1asset-out-node-3svg-in",
+      "selected": false
+    },
+    {
+      "animated": true,
+      "source": "node-4",
+      "sourceHandle": "text-out",
+      "target": "node-3",
+      "targetHandle": "prompt-in",
+      "id": "xy-edge__node-4text-out-node-3prompt-in",
+      "selected": false
+    }
+  ],
+  "viewport": {
+    "x": 0,
+    "y": 0,
+    "zoom": 1
+  },
+  "createdAt": "2026-03-02T20:40:21.427Z",
+  "updatedAt": "2026-03-02T20:40:23.572Z"
+}
