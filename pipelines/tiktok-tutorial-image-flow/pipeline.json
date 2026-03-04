@@ -1,0 +1,324 @@
+{
+  "id": "84939bdf-0482-47a1-9f51-02e3509c8eed",
+  "name": "TikTok Tutorial - Image Flow",
+  "description": "Remotion Test",
+  "nodes": [
+    {
+      "id": "node-2",
+      "type": "text-prompt",
+      "position": {
+        "x": 50,
+        "y": 318
+      },
+      "data": {
+        "name": "Hook Visual",
+        "config": {
+          "prompt": "Futuristic holographic interface floating in a dark room, glowing blue and violet interconnected nodes and data streams, volumetric light rays cutting through haze, shallow depth of field, shot on Sony A7IV 35mm f/1.4, cinematic color grading, vertical composition 9:16 aspect ratio"
+        },
+        "status": "idle"
+      },
+      "measured": {
+        "width": 260,
+        "height": 293
+      }
+    },
+    {
+      "id": "node-3",
+      "type": "text-prompt",
+      "position": {
+        "x": 50,
+        "y": 651
+      },
+      "data": {
+        "name": "Problem Visual",
+        "config": {
+          "prompt": "Overhead view of a chaotic video editing desk, three monitors showing complex editing timelines with hundreds of layers, tangled cables, empty coffee cups, scattered sticky notes, dim warm tungsten lighting, editorial photography style, shot on Fuji GFX 50mm, moody and overwhelming atmosphere, vertical composition 9:16"
+        },
+        "status": "idle"
+      },
+      "measured": {
+        "width": 260,
+        "height": 309
+      }
+    },
+    {
+      "id": "node-4",
+      "type": "text-prompt",
+      "position": {
+        "x": 50,
+        "y": 1000
+      },
+      "data": {
+        "name": "Solution Visual",
+        "config": {
+          "prompt": "Clean minimal dark user interface showing a node-based workflow editor, elegant connected rounded rectangles with soft purple and cyan neon glow lines between them, glassmorphism design, a hand reaching to drag a glowing node, dark background with subtle gradient, modern tech product screenshot aesthetic, vertical 9:16"
+        },
+        "status": "idle"
+      },
+      "measured": {
+        "width": 260,
+        "height": 309
+      }
+    },
+    {
+      "id": "node-5",
+      "type": "text-prompt",
+      "position": {
+        "x": 50,
+        "y": 1349
+      },
+      "data": {
+        "name": "Result Visual",
+        "config": {
+          "prompt": "Breathtaking cinematic landscape photograph, dramatic golden hour sunset over calm ocean, volumetric god rays piercing through towering cumulus clouds, silhouetted rocky coastline in foreground, warm amber and cool teal color contrast, shot on Hasselblad medium format 80mm f/2.8, photorealistic, awe-inspiring natural beauty, vertical 9:16 composition"
+        },
+        "status": "idle"
+      },
+      "measured": {
+        "width": 260,
+        "height": 313
+      }
+    },
+    {
+      "id": "node-6",
+      "type": "text-prompt",
+      "position": {
+        "x": 50,
+        "y": 1702
+      },
+      "data": {
+        "name": "Voiceover Script",
+        "config": {
+          "prompt": "Stop scrolling. What if I told you... there's a tool that turns a simple text prompt into a fully produced video? No editing timeline. No render queue. Just connect the nodes, type what you want, and hit generate. This is Image Flow. AI-powered video creation that takes seconds, not hours. Try it free today."
+        },
+        "status": "idle"
+      },
+      "measured": {
+        "width": 260,
+        "height": 293
+      }
+    },
+    {
+      "id": "node-7",
+      "type": "image-gen",
+      "position": {
+        "x": 390,
+        "y": 50
+      },
+      "data": {
+        "name": "Gen Hook",
+        "config": {
+          "provider": "replicate",
+          "model": "flux-2-pro",
+          "params": {}
+        },
+        "status": "idle"
+      },
+      "measured": {
+        "width": 260,
+        "height": 423
+      }
+    },
+    {
+      "id": "node-8",
+      "type": "image-gen",
+      "position": {
+        "x": 390,
+        "y": 513
+      },
+      "data": {
+        "name": "Gen Problem",
+        "config": {
+          "provider": "replicate",
+          "model": "flux-2-pro",
+          "params": {}
+        },
+        "status": "idle"
+      },
+      "measured": {
+        "width": 260,
+        "height": 423
+      }
+    },
+    {
+      "id": "node-9",
+      "type": "image-gen",
+      "position": {
+        "x": 390,
+        "y": 976
+      },
+      "data": {
+        "name": "Gen Solution",
+        "config": {
+          "provider": "replicate",
+          "model": "flux-2-pro",
+          "params": {}
+        },
+        "status": "idle"
+      },
+      "measured": {
+        "width": 260,
+        "height": 423
+      }
+    },
+    {
+      "id": "node-10",
+      "type": "image-gen",
+      "position": {
+        "x": 390,
+        "y": 1439
+      },
+      "data": {
+        "name": "Gen Result",
+        "config": {
+          "provider": "replicate",
+          "model": "flux-2-pro",
+          "params": {}
+        },
+        "status": "idle"
+      },
+      "measured": {
+        "width": 260,
+        "height": 423
+      }
+    },
+    {
+      "id": "node-11",
+      "type": "voice-gen",
+      "position": {
+        "x": 390,
+        "y": 1902
+      },
+      "data": {
+        "name": "Narrator",
+        "config": {
+          "provider": "elevenlabs",
+          "model": "multilingual-v2",
+          "params": {
+            "voice": "29vD33N1CtxCmqQRPOHJ",
+            "stability": 0.6,
+            "similarity_boost": 0.8
+          }
+        },
+        "status": "idle"
+      },
+      "measured": {
+        "width": 260,
+        "height": 361
+      }
+    },
+    {
+      "id": "node-12",
+      "type": "video-compose",
+      "position": {
+        "x": 730,
+        "y": 817.5
+      },
+      "data": {
+        "name": "TikTok Tutorial",
+        "config": {
+          "code": "import { AbsoluteFill, Img, Audio, useCurrentFrame, useVideoConfig, interpolate, spring } from \"remotion\";\n\nexport default function TikTokTutorial({ inputs }) {\n  const frame = useCurrentFrame();\n  const { fps, durationInFrames } = useVideoConfig();\n\n  const images = [inputs[\"input-1\"], inputs[\"input-2\"], inputs[\"input-3\"], inputs[\"input-4\"]].filter(Boolean);\n  const audio = inputs[\"audio-in\"];\n\n  const scenes = [\n    { start: 0,   end: 150, caption: 'Stop scrolling.', sub: 'What if AI made your videos?' },\n    { start: 150, end: 300, caption: 'Editing takes forever.', sub: 'Hours of work for minutes of content.' },\n    { start: 300, end: 480, caption: 'Just connect the nodes.', sub: 'Type what you want. Hit generate.' },\n    { start: 480, end: 630, caption: 'This is Image Flow.', sub: 'AI video creation in seconds.' },\n    { start: 630, end: 750, caption: 'Try it free today.', sub: 'imageflow.ai' },\n  ];\n\n  const sp = (delay, damping = 12, stiffness = 80) =>\n    spring({ frame: Math.max(0, frame - delay), fps, config: { damping, stiffness } });\n\n  const sceneIdx = scenes.findIndex(s => frame >= s.start && frame < s.end);\n  const scene = scenes[Math.max(0, sceneIdx === -1 ? scenes.length - 1 : sceneIdx)];\n  const sceneProgress = (frame - scene.start) / (scene.end - scene.start);\n\n  const imgIdx = sceneIdx >= 0 && sceneIdx < images.length ? sceneIdx : sceneIdx >= images.length ? images.length - 1 : 0;\n  const currentImg = images[imgIdx] || images[0];\n  const nextImgIdx = Math.min(imgIdx + 1, images.length - 1);\n  const nextImg = images[nextImgIdx];\n\n  const zoom = interpolate(sceneProgress, [0, 1], [1, 1.1]);\n\n  const transFrames = 12;\n  const isTransitioning = scene && (frame > scene.end - transFrames) && sceneIdx < scenes.length - 1;\n  const transProg = isTransitioning\n    ? interpolate(frame, [scene.end - transFrames, scene.end], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })\n    : 0;\n\n  const captionDelay = scene ? scene.start + 5 : 0;\n  const captionIn = sp(captionDelay, 14, 100);\n  const subIn = sp(scene ? scene.start + 18 : 0, 14, 80);\n\n  const isCTA = sceneIdx === scenes.length - 1 || sceneIdx === -1;\n  const ctaPulse = isCTA ? 0.92 + Math.sin(frame * 0.2) * 0.08 : 1;\n\n  return (\n    <AbsoluteFill style={{ background: '#000' }}>\n      {currentImg && (\n        <Img src={currentImg} style={{\n          position: 'absolute', width: '100%', height: '100%', objectFit: 'cover',\n          transform: `scale(${zoom})`,\n          opacity: 1 - transProg,\n        }} />\n      )}\n      {isTransitioning && nextImg && (\n        <Img src={nextImg} style={{\n          position: 'absolute', width: '100%', height: '100%', objectFit: 'cover',\n          opacity: transProg,\n        }} />\n      )}\n\n      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.7) 100%)' }} />\n      <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '60%', background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 40%, transparent 100%)' }} />\n      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '20%', background: 'linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 100%)' }} />\n\n      {scene && (\n        <div style={{\n          position: 'absolute', bottom: 320, left: 56, right: 100,\n          opacity: captionIn,\n          transform: `translateY(${(1 - captionIn) * 25}px) scale(${ctaPulse})`,\n        }}>\n          <div style={{\n            fontSize: isCTA ? 60 : 50, fontWeight: 900, color: 'white',\n            textShadow: '0 2px 20px rgba(0,0,0,0.9), 0 4px 40px rgba(0,0,0,0.5)',\n            lineHeight: 1.15, letterSpacing: -1,\n            fontFamily: 'system-ui, -apple-system, sans-serif',\n          }}>\n            {scene.caption}\n          </div>\n          <div style={{\n            fontSize: 26, color: 'rgba(255,255,255,0.65)', marginTop: 14,\n            opacity: subIn,\n            textShadow: '0 2px 10px rgba(0,0,0,0.9)',\n            fontFamily: 'system-ui, -apple-system, sans-serif',\n            fontWeight: 500,\n          }}>\n            {scene.sub}\n          </div>\n        </div>\n      )}\n\n      <div style={{ position: 'absolute', bottom: 260, left: 56, display: 'flex', gap: 6 }}>\n        {scenes.map((_, i) => (\n          <div key={i} style={{\n            width: i === Math.max(0, sceneIdx) ? 22 : 7, height: 7, borderRadius: 4,\n            background: i === Math.max(0, sceneIdx) ? 'white' : 'rgba(255,255,255,0.3)',\n          }} />\n        ))}\n      </div>\n\n      <div style={{\n        position: 'absolute', top: 65, left: 50,\n        display: 'flex', alignItems: 'center', gap: 10, opacity: 0.7,\n      }}>\n        <div style={{\n          width: 36, height: 36, borderRadius: 10,\n          background: 'linear-gradient(135deg, oklch(0.55 0.2 260), oklch(0.45 0.2 300))',\n          display: 'flex', alignItems: 'center', justifyContent: 'center',\n          fontSize: 15, fontWeight: 900, color: 'white',\n        }}>IF</div>\n        <div style={{ fontSize: 15, color: 'white', fontWeight: 600, fontFamily: 'system-ui' }}>Image Flow</div>\n      </div>\n\n      <div style={{ position: 'absolute', right: 20, bottom: 340, display: 'flex', flexDirection: 'column', gap: 22, alignItems: 'center', opacity: 0.35 }}>\n        {[0, 1, 2, 3].map(i => (\n          <div key={i} style={{ width: 42, height: 42, borderRadius: 21, background: 'rgba(255,255,255,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>\n            <div style={{ width: 18, height: 18, borderRadius: 9, background: 'rgba(255,255,255,0.45)' }} />\n          </div>\n        ))}\n      </div>\n\n      <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 3 }}>\n        <div style={{ height: '100%', width: `${(frame / durationInFrames) * 100}%`, background: 'white', opacity: 0.5 }} />\n      </div>\n\n      {audio && <Audio src={audio} volume={0.9} />}\n    </AbsoluteFill>\n  );\n}",
+          "width": 1080,
+          "height": 1920,
+          "fps": 30,
+          "durationSeconds": 25
+        },
+        "status": "idle"
+      },
+      "measured": {
+        "width": 260,
+        "height": 678
+      },
+      "selected": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "node-2",
+      "sourceHandle": "text-out",
+      "target": "node-7",
+      "targetHandle": "prompt-in",
+      "animated": true,
+      "id": "xy-edge__node-2text-out-node-7prompt-in"
+    },
+    {
+      "source": "node-3",
+      "sourceHandle": "text-out",
+      "target": "node-8",
+      "targetHandle": "prompt-in",
+      "animated": true,
+      "id": "xy-edge__node-3text-out-node-8prompt-in"
+    },
+    {
+      "source": "node-4",
+      "sourceHandle": "text-out",
+      "target": "node-9",
+      "targetHandle": "prompt-in",
+      "animated": true,
+      "id": "xy-edge__node-4text-out-node-9prompt-in"
+    },
+    {
+      "source": "node-5",
+      "sourceHandle": "text-out",
+      "target": "node-10",
+      "targetHandle": "prompt-in",
+      "animated": true,
+      "id": "xy-edge__node-5text-out-node-10prompt-in"
+    },
+    {
+      "source": "node-6",
+      "sourceHandle": "text-out",
+      "target": "node-11",
+      "targetHandle": "text-in",
+      "animated": true,
+      "id": "xy-edge__node-6text-out-node-11text-in"
+    },
+    {
+      "source": "node-7",
+      "sourceHandle": "image-out",
+      "target": "node-12",
+      "targetHandle": "input-1",
+      "animated": true,
+      "id": "xy-edge__node-7image-out-node-12input-1"
+    },
+    {
+      "source": "node-8",
+      "sourceHandle": "image-out",
+      "target": "node-12",
+      "targetHandle": "input-2",
+      "animated": true,
+      "id": "xy-edge__node-8image-out-node-12input-2"
+    },
+    {
+      "source": "node-9",
+      "sourceHandle": "image-out",
+      "target": "node-12",
+      "targetHandle": "input-3",
+      "animated": true,
+      "id": "xy-edge__node-9image-out-node-12input-3"
+    },
+    {
+      "source": "node-10",
+      "sourceHandle": "image-out",
+      "target": "node-12",
+      "targetHandle": "input-4",
+      "animated": true,
+      "id": "xy-edge__node-10image-out-node-12input-4"
+    },
+    {
+      "source": "node-11",
+      "sourceHandle": "audio-out",
+      "target": "node-12",
+      "targetHandle": "audio-in",
+      "animated": true,
+      "id": "xy-edge__node-11audio-out-node-12audio-in"
+    }
+  ],
+  "viewport": {
+    "x": 0,
+    "y": 0,
+    "zoom": 1
+  },
+  "createdAt": "2026-03-04T00:45:30.109Z",
+  "updatedAt": "2026-03-04T00:45:32.863Z"
+}

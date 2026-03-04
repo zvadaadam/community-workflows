@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-03-02T20:40:21.427Z",
+  "updatedAt": "2026-03-04T00:45:30.109Z",
   "pipelines": [
     {
       "id": "untitled-pipeline",
@@ -16,6 +16,21 @@
       "pipelinePath": "pipelines/untitled-pipeline/pipeline.json",
       "publishedAt": "2026-03-02T20:40:21.427Z",
       "updatedAt": "2026-03-02T20:40:21.427Z"
+    },
+    {
+      "id": "tiktok-tutorial-image-flow",
+      "name": "TikTok Tutorial - Image Flow",
+      "description": "Remotion Test",
+      "author": "Adam",
+      "tags": [
+        "remotion"
+      ],
+      "category": "voice",
+      "nodeCount": 11,
+      "pipelinePath": "pipelines/tiktok-tutorial-image-flow/pipeline.json",
+      "publishedAt": "2026-03-04T00:45:30.109Z",
+      "updatedAt": "2026-03-04T00:45:30.109Z",
+      "thumbnail": "pipelines/tiktok-tutorial-image-flow/thumbnail.webp"
     }
   ]
 }
